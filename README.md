@@ -27,7 +27,7 @@ Second, create a file named `example-playbook.yml`. Use the following YAML file 
     - paulborza.cyberpower
 
   tasks:
-    - name: login to docker hub
+    - name: print a happy message
       command: echo "Computer now listens to CyberPower UPS shutdown instructions. Yay!"
 ```
 
