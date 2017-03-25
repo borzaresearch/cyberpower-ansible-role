@@ -19,27 +19,16 @@ First, download the CyberPower role locally.
 ansible-galaxy install --force paulborza.cyberpower
 ```
 
-Second, create a file named `example-playbook.yml`. Use the following YAML file as example, but don't forget to replace the Docker Hub credentials and container information. The example assumes that you want to run a private container that's built by [hub.docker.com](https://hub.docker.com/)
+Second, create a file named `example-playbook.yml`. Use the following YAML file as example.
 
 ```
 - hosts: all
   roles:
-    - paulborza.docker
+    - paulborza.cyberpower
 
   tasks:
     - name: login to docker hub
-      become: true
-      docker_login:
-        username: YOUR_DOCKER_HUB_USERNAME
-        password: YOUR_DOCKER_HUB_PASSWORD
-        email: YOUR_EMAIL
-
-    - name: start container
-      become: true
-      docker_container:
-        name: DESIRED_CONTAINER_NAME
-        image: YOUR_DOCKER_HUB_USERNAME/YOUR_DOCKER_HUB_REPOSITORY
-        pull: true
+      command: echo "Computer now listens to CyberPower UPS shutdown instructions. Yay!"
 ```
 
 Third, create another file named `hosts` by running `echo localhost > hosts`. Feel free to update the hosts file to match your infrastructure configuration.
@@ -53,4 +42,4 @@ ansible-playbook ./example-playbook.yml -i ./hosts
 ## Contributing
 
 Got a new OS you'd like to see supported by this role?
-Please go ahead and [create a work item](https://github.com/paulborza/docker-ansible-role/issues/new) for me; or better yet, send a pull request and I'll be sure to take a look at it within 24 hours. Thanks!
+Please go ahead and [create a work item](https://github.com/paulborza/cyberpower-ansible-role/issues/new) for me; or better yet, send a pull request and I'll be sure to take a look at it within 24 hours. Thanks!
