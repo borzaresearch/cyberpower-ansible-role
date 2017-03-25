@@ -7,7 +7,7 @@
 
 galaxy_info:
   author: paulborza
-  description: UPS role for Ansible; i.e. controls a UPS system attached to a Linux-based computer
+  description: CyberPower role for Ansible; i.e. controls a UPS system attached to a Linux-based computer
 
   license: MIT
 
