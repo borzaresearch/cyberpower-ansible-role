@@ -46,7 +46,9 @@ To test the CyberPower UPS, fully charge it first, and then unplug it; it'll sta
 
 ```bash
 pwrstat -status
+```
 
+```
 The UPS information shows as following:
 
 	Properties:
