@@ -39,6 +39,35 @@ Finally, execute the playbook against the servers listed in the `hosts` file.
 ansible-playbook ./example-playbook.yml -i ./hosts
 ```
 
+## Loss of power
+
+If there's a loss of power, the computer will be shutdown automatically.
+To test the CyberPower UPS, fully charge it first, and then unplug it; it'll start beeping from time to time. You can also check the status of the UPS with the following command.
+
+```bash
+pwrstat -status
+
+The UPS information shows as following:
+
+	Properties:
+		Model Name................... CP1500AVRLCDa
+		Firmware Number.............. CTHFU2000557
+		Rating Voltage............... 120 V
+		Rating Power................. 900 Watt(1500 VA)
+
+	Current UPS status:
+		State........................ Power Failure
+		Power Supply by.............. Battery Power
+		Utility Voltage.............. 0 V
+		Output Voltage............... 120 V
+		Battery Capacity............. 100 %
+		Remaining Runtime............ 34 min.
+		Load......................... 198 Watt(22 %)
+		Line Interaction............. None
+		Test Result.................. Unknown
+		Last Power Event............. Blackout at 2017/03/26 11:40:07
+```
+
 ## Contributing
 
 Got a new OS you'd like to see supported by this role?
