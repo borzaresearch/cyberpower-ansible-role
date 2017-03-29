@@ -1,6 +1,6 @@
 # &#128267; CyberPower role for Ansible
 
-[![Build Status](https://img.shields.io/travis/paulborza/cyberpower-ansible-role/master.svg?style=flat)](https://travis-ci.org/paulborza/cyberpower-ansible-role)
+[![Build Status](https://img.shields.io/travis/paulborza/cyberpower-ansible-role/master.svg)](https://travis-ci.org/paulborza/cyberpower-ansible-role)
 
 ## Supported OS
 
