@@ -1,4 +1,4 @@
-# &#128267; CyberPower role for Ansible
+# CyberPower Role for Ansible
 
 [![Build Status](https://img.shields.io/travis/paulborza/cyberpower-ansible-role/master.svg)](https://travis-ci.org/paulborza/cyberpower-ansible-role)
 [![Ansible Role](https://img.shields.io/ansible/role/16551.svg)](https://galaxy.ansible.com/paulborza/cyberpower/)
@@ -17,7 +17,7 @@
 First, download the CyberPower role locally.
 
 ```bash
-ansible-galaxy install --force paulborza.cyberpower
+ansible-galaxy install --force borzaresearch.cyberpower
 ```
 
 Second, create a file named `example-playbook.yml`. Use the following YAML file as example.
@@ -25,7 +25,7 @@ Second, create a file named `example-playbook.yml`. Use the following YAML file 
 ```
 - hosts: all
   roles:
-    - paulborza.cyberpower
+    - borzaresearch.cyberpower
 
   tasks:
     - name: print a happy message
@@ -40,7 +40,7 @@ Finally, execute the playbook against the servers listed in the `hosts` file.
 ansible-playbook ./example-playbook.yml -i ./hosts
 ```
 
-## Loss of power
+## Loss of Power
 
 If there's a loss of power, the computer will be shutdown automatically.
 To test the CyberPower UPS, fully charge it first, and then unplug it; it'll start beeping from time to time. You can also check the status of the UPS with the following command.
@@ -74,4 +74,4 @@ The UPS information shows as following:
 ## Contributing
 
 Got a new OS you'd like to see supported by this role?
-Please go ahead and [create a work item](https://github.com/paulborza/cyberpower-ansible-role/issues/new) for me; or better yet, send a pull request and I'll be sure to take a look at it within 24 hours. Thanks!
+Please go ahead and [create a work item](https://github.com/borzaresearch/cyberpower-ansible-role/issues/new) for me; or better yet, send a pull request and I'll be sure to take a look at it within 24 hours. Thanks!
