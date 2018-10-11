@@ -1,7 +1,7 @@
 # CyberPower Role for Ansible
 
 [![Build Status](https://img.shields.io/travis/borzaresearch/cyberpower-ansible-role/master.svg)](https://travis-ci.org/borzaresearch/cyberpower-ansible-role)
-[![Ansible Role](https://img.shields.io/ansible/role/16551.svg)](https://galaxy.ansible.com/paulborza/cyberpower/)
+[![Ansible Role](https://img.shields.io/ansible/role/30519.svg)](https://galaxy.ansible.com/paulborza/cyberpower/)
 
 ## Supported OS
 
