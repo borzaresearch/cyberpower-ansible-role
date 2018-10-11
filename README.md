@@ -1,6 +1,6 @@
 # CyberPower Role for Ansible
 
-[![Build Status](https://img.shields.io/travis/paulborza/cyberpower-ansible-role/master.svg)](https://travis-ci.org/paulborza/cyberpower-ansible-role)
+[![Build Status](https://img.shields.io/travis/borzaresearch/cyberpower-ansible-role/master.svg)](https://travis-ci.org/borzaresearch/cyberpower-ansible-role)
 [![Ansible Role](https://img.shields.io/ansible/role/16551.svg)](https://galaxy.ansible.com/paulborza/cyberpower/)
 
 ## Supported OS
@@ -17,7 +17,7 @@
 First, download the CyberPower role locally.
 
 ```bash
-ansible-galaxy install --force borzaresearch.cyberpower
+ansible-galaxy install --force paulborza.cyberpower
 ```
 
 Second, create a file named `example-playbook.yml`. Use the following YAML file as example.
@@ -25,7 +25,7 @@ Second, create a file named `example-playbook.yml`. Use the following YAML file 
 ```
 - hosts: all
   roles:
-    - borzaresearch.cyberpower
+    - paulborza.cyberpower
 
   tasks:
     - name: print a happy message
