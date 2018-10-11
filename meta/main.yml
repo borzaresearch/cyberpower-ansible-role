@@ -6,6 +6,7 @@
 #
 
 galaxy_info:
+  role_name: cyberpower
   author: borzaresearch
   description: CyberPower role for Ansible; i.e. shutdown software for when there's loss of power.
 
